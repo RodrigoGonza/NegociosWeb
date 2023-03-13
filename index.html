@@ -1,0 +1,163 @@
+<!-- Index de Juguetería -->
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+    <meta charset="utf-8">
+    <title>La Juguetería México</title>
+    <style>
+        footer {
+            background-color: darkblue;
+            border-radius: 15px;
+            padding: auto;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+    <script defer src="js/inicio.js"></script>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="inicial.css">
+    <link rel="shortcut icon" href="imagenes/img-icon.png">
+    </head>
+    <body style="background-color:powderblue">
+        <header class="header">
+            <nav class="nav">
+               <a href="#" class="hipervinculo" style="font-size:13px;padding: 0 10px;">
+                    <ul style="list-style:none;">
+                        <li>&nbsp</li>
+                        <li>Equipo&nbsp8</li> 
+                        <li>Gonzáles&nbspSánchez&nbspRodrigo</li> 
+                        <li>Rosas&nbspHernández&nbspMarisol</li>
+                        <li>Silva&nbspBarrera&nbspBrandon</li>
+                    </ul>
+                </a>
+                <a href="index.html" class="logo hipervinculo" style="background-image:url('./imagenes/logo.png');max-height:80px;">ROLL</a>
+                <button class="menu-desplegable">
+                    <img src="imagenes/menu.png" width="20px" height="20px">
+                </button>
+                <ul class="menu">
+                    <li class="menu-boton"><a href="productos.html" class="menu-hipervinculo hipervinculo">Buscar Productos</a></li>
+                    <li class="menu-boton"><a href="iniciarSesion.html" class="menu-hipervinculo hipervinculo">Iniciar Sesión</a></li>
+                    <li class="menu-boton"><a href="carrito.html" class="menu-hipervinculo hipervinculo">Carrito de Compra</a></li>
+                    <li class="menu-boton"><a href="reporteVentas.html" class="menu-hipervinculo hipervinculo">Ventas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contenedor">
+            <div class="contenedor-productos">
+                <div class="producto" style="cursor: pointer;" onclick="window.location='productos.html#bic';">
+                    <div class="carta" style="background-image: url('./imagenes/bicicletas.png')">
+                        <div class="texto">
+                            <h2><span style="color:white;background-color: darkblue;border-radius: 5px;">&nbsp;Bicicletas&nbsp;</span></h2>
+                        </div>
+                    </div>
+                    <div class="des">
+                        <h3><p style="text-align: center;">&nbsp;Bicicletas con distintos tipos de rodadas. <br> &nbsp;Pregunta por nuestros descuentos.&nbsp;</p></h3>
+                    </div>
+                </div>
+                <div class="producto" style="cursor: pointer;" onclick="window.location='productos.html';">
+                    <div class="carta" style="background-image: url('./imagenes/triciclo.jpg');">
+                        <div class="texto">
+                            <h2><span style="color:white;background-color: darkblue;border-radius: 5px;">&nbsp;Variedad de productos&nbsp;</span></h2>
+                        </div>
+                    </div>
+                    <div class="des">
+                        <h3><p style="text-align: center;">&nbsp;Modelos para todas las edades.<br> &nbsp;Versiones económicas.&nbsp;</p></h3>
+                    </div>
+                </div>
+                <div class="producto" style="cursor: pointer;" onclick="window.location='productos.html#bal';">
+                    <div class="carta" style="background-image: url('./imagenes/balon.jpg');">
+                        <div class="texto">
+                            <h2><span style="color:white;background-color: darkblue;border-radius: 5px;">&nbsp;Balones&nbsp;</span></h2>
+                        </div>
+                    </div>
+                    <div class="des">
+                        <h3><p style="text-align: center;">&nbsp;Distintos tamaños, precios y marcas para elegir.<br> &nbsp;Ofertas limitadas a este mes.&nbsp;</p></h3>
+                    </div>
+                </div>
+                <div class="producto" style="cursor: pointer;" onclick="window.location='productos.html#bic';">
+                    <div class="carta" style="background-image: url('./imagenes/bicicleta.jpg');">
+                        <div class="texto">
+                            <h2><span style="color:white;background-color: darkblue;border-radius: 5px;">&nbsp;Promociones&nbsp;</span></h2>
+                        </div>
+                    </div>
+                    <div class="des">
+                        <h3><p style="text-align: center;">&nbsp;Aprovecha para comprar tus regalos.<br> &nbsp;Protegemos tu bolsillo.&nbsp;</p></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carta" style="background-color: darkcyan;color:white;text-align:center;padding:80px 0 80px 0;font-size:20px;max-height:200px;">
+            <h3>Conoce nuestra gran variedad en balones y pelotas.</h3>
+        </div>
+        <video src="imagenes/balones.mp4" controls></video>
+        <br><br>
+        <div class="contenedor">
+            <div class="contenedor-productos">
+                <div class="producto" style="cursor: pointer;" onclick="window.location='https://www.youtube.com/watch?v=MyROvu6gvdE';">
+                    <div class="carta" style="background-image: url('./imagenes/triciclo.jpg')">
+                        <div class="texto">
+                            <h2><span style="color:white;background-color: darkblue;border-radius: 5px;">&nbsp;Vehículos infantiles&nbsp;</span></h2>
+                        </div>
+                    </div>
+                    <div class="des">
+                        <h3><p style="text-align: center;">&nbsp;Descubre los modernos modelos de triciclos que tenemos. <br> &nbsp;Diseños innovadores.&nbsp;</p></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Mapa-->
+        <div id="contenedor-mapa">
+            <img id="img_map" src="./imagenes/vehiculos.jpg" width="60%" alt="vehiculos" usemap="#mapa">
+            <map name="mapa">
+                <area id="bicicleta" shape="rect" coords="" alt="bicicleta" href="comprar.html?producto=bicicleta">
+                <area id="triciclo" shape="rect" coords="" alt="triciclo" href="comprar.html?producto=triciclo">
+                <area id="scooter" shape="rect" coords="" href="">
+                <area id="patin" shape="rect" coords="" alt="patin del diablo" href="comprar.html?producto=patin">  
+            </map>
+            <script>
+                start();
+                window.onresize = start;
+                function start(){
+                    var imageMapWidth = document.getElementById('img_map').clientWidth;
+                    var imageMapHalf = imageMapWidth/2;
+                    imageMapWidth.toString();
+                    imageMapHalf.toString();
+                    var coord_bicicleta = '0,0,'+imageMapHalf+','+imageMapHalf;
+                    var coord_triciclo = imageMapHalf+',0,'+imageMapWidth+','+imageMapHalf;
+                    var coord_scooter = '0,'+imageMapHalf+','+imageMapHalf+','+imageMapWidth;
+                    var coord_patin = imageMapHalf+','+imageMapHalf+','+imageMapWidth+','+imageMapWidth;
+                    var b = document.getElementById("bicicleta");
+                    b.setAttribute("coords", coord_bicicleta);
+                    var t = document.getElementById("triciclo");
+                    t.setAttribute("coords", coord_triciclo);
+                    var s = document.getElementById("scooter");
+                    s.setAttribute("coords", coord_scooter);
+                    var p = document.getElementById("patin");
+                    p.setAttribute("coords", coord_patin);
+                                }
+
+            </script>
+        </div>
+        <!--Mapa-->
+        <div class="carta" style="background-color: green;color:white;text-align:center;padding:80px 0 80px 0;font-size:20px;max-height:200px;">
+            <em>
+                Contamos con atractivos precios.
+    
+                Recomendado por los consumidores   !!!
+            </em>
+        </div>
+        <br><br>
+    </body>
+    <footer>
+        <p>&copy;Juguetería</p>
+        <p>Ultima actualización: 14 de enero de 2023</p>
+        <!--
+            <ul>
+            <li><a href="/acerca-de" style="color: aliceblue;">Acerca de</a></li>
+            <li><a href="/conectar" style="color: aliceblue;">Conectar</a></li>
+            <li><a href="/rrss" style="color: aliceblue;">Redes Sociales</a></li>
+            </ul>
+         -->
+    </footer>
+</html>

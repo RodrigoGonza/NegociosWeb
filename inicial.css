@@ -1,0 +1,150 @@
+/*  */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url("legos.jpg");*/
+    /*background-repeat: no-repeat;*/
+    background-color: cornflowerblue;
+    background-position: top;
+    background-attachment: scroll;
+}
+
+.titulo {
+	font-size: 24px;
+    font-family: georgia;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+	padding: 5px 0;
+    background-color: darkblue;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+.producto {
+    /*background-color: green;*/
+}
+
+.carta {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	/*position: relative;*/
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.texto-carta {
+    height: 100%;
+    color: skyblue;
+}
+
+.des {
+    font-weight: bold;
+    color: white;
+}
+
+.img-productos {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.contenedor-productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor-productos>div{
+    box-shadow: 0px 0px 5px 0px rgba(6, 5, 73, 0.75);
+    background-color: skyblue;
+    border-radius: 20px;
+}
+
+
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: steelblue;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: rgb(12, 77, 102);
+}
+
+/*
+div {
+    background-color: aqua;
+    color: rgb(70,5,5);
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px black;
+    text-decoration: blue;
+    font-size: large;
+    font-family: verdana;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+}*/
+/*
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  /*
+  a:hover, a:active {
+    background-color: red;
+  }
+  */
+

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 100px 20px 0;
+}
+
+header {
+    background-color: blue;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.menu-boton {
+    font-size: 20px;
+    margin: 0 20px;
+    line-height: 100px;
+    text-transform: uppercases;
+    width: max-content;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.menu-hipervinculo {
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.menu-hipervinculo:hover {
+    background-color: skyblue;
+    transition: 0.4s;
+}
+
+.hipervinculo {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 50px 10px;
+    line-height: 10px;
+}
+
+.menu-desplegable {
+    border: none;
+    padding: 20px;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+video {
+    width: 100%;
+    border-radius: 20px;
+}
+/*Mapa*/
+#contenedor-mapa{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contenedor-mapa > img{
+    margin-bottom: 60px;
+}
+/*Mapa*/
+
+/*Inicio de sesión*/
+#inicioSesion{
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    margin:  auto;
+    background-color: cadetblue;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#f1{
+    margin-bottom: 20px;
+    display: none;
+}
+
+#f2{
+    margin-bottom: 20px;
+    display: none;
+}
+
+#altaCliente{
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    margin:  auto;
+    background-color: cadetblue;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+
+}
+
+.botonInicioSesion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+
+/*Inicio de sesión*/
+
+/*Comprar*/
+.contenedor-compra{
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    margin:  auto;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+}
+/*Comprar*/
+
+/*reporte de ventas*/
+#contenedor-ventas{
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    margin:  auto;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.titulo{
+    margin-bottom: 20px;
+}
+
+/*reporte de ventas*/
+
+@media (max-width: 768px) { 
+body {
+        padding-top: 70px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 100px 20px 0;
+}
+
+header {
+    background-color: blue;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: darkslategray;
+    position: fixed;
+    align-items: center;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.4s;
+}
+
+.menu-boton {
+    line-height: 85px;
+}
+
+.menu-hipervinculo:hover {
+    background: none;
+    color: gray;
+}
+
+.logo {
+    font-size: 25px;
+    padding: 0px 20px;
+    line-height: 80px;
+}
+
+.menu-desplegable {
+    display: block;
+} 
+
+.menu-visible {
+    left: 0;
+}
+
+video {
+    width: 100%;
+    border-radius: 20px;
+}
+}

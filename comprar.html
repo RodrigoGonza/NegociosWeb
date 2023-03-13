@@ -1,0 +1,84 @@
+<!-- Página para iniciar sesión -->
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="utf-8">
+        <script defer src="js/inicio.js"></script>
+        <link rel="stylesheet" href="inicial.css">
+        <link rel="stylesheet" href="inicio.css">
+    </head>
+    <body onload="obtenerProducto()">
+        <!-- Menú superior -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo hipervinculo" style="background-image:url('./imagenes/logo.png');max-height:80px;">ROLL</a>
+                <button class="menu-desplegable">
+                    <img src="imagenes/menu.png" width="20px" height="20px">
+                </button>
+                <ul class="menu">
+                    <li class="menu-boton"><a href="productos.html" class="menu-hipervinculo hipervinculo">Buscar Productos</a></li>
+                    <li class="menu-boton"><a href="iniciarSesion.html" class="menu-hipervinculo hipervinculo">Iniciar Sesión</a></li>
+                    <li class="menu-boton"><a href="carrito.html" class="menu-hipervinculo hipervinculo">Carrito de Compra</a></li>
+                    <li class="menu-boton"><a href="reporteVentas.html" class="menu-hipervinculo hipervinculo">Ventas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            
+        </script>
+        <!-- Usuario existente -->
+        <div class="titulo">
+            <h1>Hacer Pedido</h1>
+        </div>
+        <br>
+        <h1 id="nombreProducto">H</h1>
+        <br>
+        <div class="contenedor-compra">
+            <form name = "venta" action="venta.php" method="post">
+                <!--<input type="checkbox" name="balon" value="balon">Balón</input>
+                <input type="checkbox" name="triciclo" value="triciclo">Triciclo</input>
+                <input type="checkbox" name="patin" value="patin">Patín</input>
+                <input type="checkbox" name="bicicleta" value="bicicleta">Bicicleta</input>
+                <br><br>-->
+                Coloque el nombre de la persona que hace el pedido <input type="text" name="nombreCliente"><br><br>
+                Proporcione un correo electrónico <input type="text" name="correoElectronico"><br><br>
+                <p>
+                    Cantidad de productos <br>
+                    <input type="radio" name="cantidad" value="1"> 1 <br>
+                    <input type="radio" name="cantidad" value="2"> 2 <br>
+                    <input type="radio" name="cantidad" value="3"> 3 <br>
+                    <input type="radio" name="cantidad" value="4"> 4 <br>
+                    <input type="radio" name="cantidad" value="5"> 5  <br>
+                    <br><br>
+                </p>
+                Domicilio de entrega <input type="text" name="domicilioEntrega"><br><br>
+                <!-- El nombre del producto se obtiene desde un parametro URL con la función
+                     obtenerProducto(). Se coloca en un apartado del formulario no visible
+                     al usuario, con el fin de poder enviarlo con POST.  -->
+                <input type="text" name="producto" id="productoElegido" hidden><br><br>
+                <input type="submit" value="Confirmar Pedido"><br>
+        </div>
+        <br>
+        <!--<a href="index.html">Volver al inicio</a>-->
+        <script>
+            //El producto elegido se obtiene como un parametro de la URL.
+            //La URL con el producto elegido se produce desde productos.html
+            function obtenerProducto() {
+                const valores = window.location.search;
+                //Creamos la instancia
+                const urlParams = new URLSearchParams(valores);
+                //Accedemos a los valores
+                var producto = urlParams.get('producto');
+                productoElegido = document.getElementById("productoElegido");
+                productoElegido.setAttribute("value", producto);
+            }
+            //Se coloca el producto escogido en una etiqueta h1
+            const valores = window.location.search;
+            //Creamos la instancia
+            const urlParams = new URLSearchParams(valores);
+            //Accedemos a los valores
+            var producto = urlParams.get('producto');
+            document.getElementById('nombreProducto').innerHTML = "Ha decido comprar: " + producto;
+        </script>
+    </body>
+</html>

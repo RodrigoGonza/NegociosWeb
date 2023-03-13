@@ -1,0 +1,77 @@
+<!-- Página para iniciar sesión -->
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="utf-8">
+        <script defer src="js/inicio.js"></script>
+        <link rel="stylesheet" href="inicial.css">
+        <link rel="stylesheet" href="inicio.css">
+    </head>
+    <body>
+        <!-- Menú superior -->
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo hipervinculo" style="background-image:url('./imagenes/logo.png');max-height:80px;">ROLL</a>
+                <button class="menu-desplegable">
+                    <img src="imagenes/menu.png" width="20px" height="20px">
+                </button>
+                <ul class="menu">
+                    <li class="menu-boton"><a href="productos.html" class="menu-hipervinculo hipervinculo">Buscar Productos</a></li>
+                    <li class="menu-boton"><a href="iniciarSesion.html" class="menu-hipervinculo hipervinculo">Iniciar Sesión</a></li>
+                    <li class="menu-boton"><a href="carrito.html" class="menu-hipervinculo hipervinculo">Carrito de Compra</a></li>
+                    <li class="menu-boton"><a href="reporteVentas.html" class="menu-hipervinculo hipervinculo">Ventas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Usuario existente -->
+        <div class="titulo" id="f1">
+            <h1>Usuario existente</h1>
+        </div>
+        <div id="inicioSesion">
+            <form name = "inicioSesion" action="inicioSesion.php" method="post">
+                Correo del cliente <input type="email" name="correoCliente" placeholder="correo@ejemplo.com" required><br><br>
+                Contraseña <input type="password" name="contrasena" required><br><br>
+                <input type="submit" name="submit2" value="Iniciar Sesión"><br>
+            </form>
+        </div>
+        <!-- Nuevos usuarios -->
+        <div class="titulo" id="f2">
+            <h1>Nuevo Usuario</h1>
+        </div>
+        <div id="altaCliente">
+            <form name = "altaCliente" action="altaCliente.php" method="post">
+                Nombre  <br> <input type="text" name="nombreCliente" required><br><br>
+                Apellido Paterno <input type="text" name="apPatCliente" required><br><br>
+                Apellido Materno <input type="text" name="apMatCliente" required><br><br>
+                Correo eléctronico <input type="email" name="correoCliente" required><br><br>
+                Contrasena <input type="password" name="contrasena" required><br><br>
+                Domicilio <br> <input type="text" name="domicilio" required><br><br>
+                <input type="submit" name="submit1" value="Crear usuario"><br>
+            </form>
+        </div>
+        <br>
+        <div class="botonInicioSesion">
+            <button type="button"onclick=iniciarSesion() id="b2" style="height:50px; width:100px;">Iniciar Sesión</button>
+        </div>
+        <br>
+        <div class="botonInicioSesion">
+            <button type="button"onclick=altaClientes() id="b1" style="height:50px; width:100px;">Crear cuenta de usuario</button>
+        </div>
+        <br>
+        <!--<a href="index.html">Volver al inicio</a>-->
+        <script>
+            function iniciarSesion(){
+                document.getElementById('f1').style.display = "flex";
+                document.getElementById('inicioSesion').style.display = "flex";
+                document.getElementById('b1').style.display = "none";
+                document.getElementById('b2').style.display = "none";
+            }
+            function altaClientes(){
+                document.getElementById('f2').style.display = "flex";
+                document.getElementById('altaCliente').style.display = "flex";
+                document.getElementById('b1').style.display = "none";
+                document.getElementById('b2').style.display = "none";
+            }
+        </script>
+    </body>
+</html>
